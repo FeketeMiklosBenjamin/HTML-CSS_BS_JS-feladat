@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="hasáb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Geometriai számítások</title>
+</head>
+
+<body>
+    <h1>A télalap és a rombusz kerülete és területe <br> A kocka és a hasáb térfogata és felszíne</h1>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="téglalap.html">Téglalap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rombusz.html">Rombusz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kocka.html">Kocka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hasáb.html">Hasáb</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <div class="p-2 border border-white">
+            <h2 id="t_kerület">A hasáb térfogata:</h2>
+            <h4>a x b x c</h4>
+            <img class="kep_felszin" src="Hasáb.png" alt="Hasáb" title="Hasáb">
+            <div>
+                <form>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="a1">a (él): </label>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <input class="form-control" type="text" id="a1" min="0" onchange="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="b1">b (él): </label>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <input class="form-control" type="text" id="b1" min="0" onchange="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="c1">c (él): </label>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <input class="form-control" type="text" id="c1" min="0" onchange="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="térfogat">Térfogat:</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" id="térfogat" disabled>
+                            <br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="p-2 border border-white">
+            <h2 id="t_terület">A hasáb felszíne:</h2>
+            <h4>(2 x ab) + (2 x bc) + (2 x ac)</h4>
+            <img class="kep_felszin" src="Hasáb_felszin.png" alt="Hasáb felszín" title="Hasáb felszín">
+            <div>
+                <form>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="a2">a (él): </label>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <input class="form-control" type="text" id="a2" min="0" onchange="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="b2">b (él): </label>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <input class="form-control" type="text" id="b2" min="0" onchange="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="c2">c (él): </label>
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <input class="form-control" type="text" id="c2" min="0" onchange="szamol()">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-12 col-md-2">
+                            <label for="felszin">Felszín:</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" id="felszin" disabled>
+                            <br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
