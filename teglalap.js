@@ -3,7 +3,7 @@ function kitoltottEgyik() {
     var b = document.getElementById("b1").value;
     return a != "" && b != "";
 }
-function szamol() {
+function kszamol() {
     if (kitoltottEgyik()) {
         var a = parseInt(document.getElementById("a1").value);
         var b = parseInt(document.getElementById("b1").value);
@@ -27,7 +27,7 @@ function kitoltottMasik() {
     var b = document.getElementById("b2").value;
     return a != "" && b != "";
 }
-function szamol() {
+function tszamol() {
     if (kitoltottMasik()) {
         var a = parseInt(document.getElementById("a2").value);
         var b = parseInt(document.getElementById("b2").value);

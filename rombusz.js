@@ -2,7 +2,7 @@ function kitoltottEgyik() {
     var a = document.getElementById("a").value;
     return a != "";
 }
-function szamol() {
+function kszamol() {
     if (kitoltottMindketto()) {
         var a = parseInt(document.getElementById("a").value);
         if (isNaN(a)) {
@@ -23,7 +23,7 @@ function kitoltottMasik() {
     var f = document.getElementById("f1").value;
     return e != "" && f != "";
 }
-function szamol() {
+function tszamol() {
     if (kitoltottMasik()) {
         var e = parseInt(document.getElementById("e1").value);
         var f = parseInt(document.getElementById("f1").value);
