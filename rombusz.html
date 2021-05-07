@@ -2,19 +2,22 @@
 <html lang="hu">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="rombusz.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Geometriai számítások</title>
 </head>
 
 <body>
-    <h1>A télalap és a rombusz kerülete és területe <br> A kocka és a hasáb térfogata és felszíne</h1>
+    <h1>
+        A télalap és a rombusz kerülete és területe <br />
+        A kocka és a hasáb térfogata és felszíne
+    </h1>
 
     <div class="container">
         <nav class="navbar navbar-expand-md bg-primary navbar-dark">
@@ -38,12 +41,12 @@
                 </ul>
             </div>
         </nav>
-        <br>
+        <br />
         <div class="p-2 border border-white">
             <h2 id="r_kerület">A rombusz kerülete:</h2>
             <h4>4 x a</h4>
-            <img class="kep" src="Rombusz_k.png" alt="Rombusz" title="Rombusz">
-            <br>
+            <img class="kep" src="Rombusz_k.png" alt="Rombusz" title="Rombusz" />
+            <br />
             <div>
                 <form>
                     <div class="row mb-2">
@@ -51,27 +54,27 @@
                             <label for="a">a (oldal): </label>
                         </div>
                         <div class="col-12 col-md-10">
-                            <input class="form-control" type="text" id="a" min="0" onchange="szamol()">
+                            <input class="form-control" type="text" id="a" min="0" onchange="szamol()" />
                         </div>
                     </div>
-                    <br>
+                    <br />
                     <div class="row mb-2">
                         <div class="col-12 col-md-2">
                             <label for="kerület2">Kerület:</label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="text" class="form-control" id="kerület2" disabled>
-                            <br>
+                            <input type="text" class="form-control" id="kerület2" disabled />
+                            <br />
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <br>
+        <br />
         <div class="p-2 border border-white">
             <h2 id="r_terület">A rombusz területe:</h2>
             <h4>(e x f) : 2</h4>
-            <img class="kep" src="Rombusz_t.png" alt="Rombusz" title="Rombusz">
+            <img class="kep" src="Rombusz_t.png" alt="Rombusz" title="Rombusz" />
             <div>
                 <form>
                     <div class="row mb-2">
@@ -79,7 +82,7 @@
                             <label for="e">e (átló): </label>
                         </div>
                         <div class="col-12 col-md-10">
-                            <input class="form-control" type="text" id="e" min="0" onchange="szamol()">
+                            <input class="form-control" type="text" id="e" min="0" onchange="szamol()" />
                         </div>
                     </div>
                     <div class="row mb-2">
@@ -87,7 +90,7 @@
                             <label for="f">f (átló): </label>
                         </div>
                         <div class="col-12 col-md-10">
-                            <input class="form-control" type="text" id="f" min="0" onchange="szamol()">
+                            <input class="form-control" type="text" id="f" min="0" onchange="szamol()" />
                         </div>
                     </div>
 
@@ -96,8 +99,8 @@
                             <label for="terület2">Terület:</label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="text" class="form-control" id="terület2" disabled>
-                            <br>
+                            <input type="text" class="form-control" id="terület2" disabled />
+                            <br />
                         </div>
                     </div>
                 </form>
@@ -105,3 +108,5 @@
         </div>
     </div>
 </body>
+
+</html>
