@@ -36,7 +36,7 @@ function tszamol() {
                 document.getElementById("f1").value = " ";
             }
         } else {
-            var terulet = (e + f) % 2;
+            var terulet = (e + f) / 2;
             document.getElementById('rterület').value = terulet.toLocaleString();
         }
     }
