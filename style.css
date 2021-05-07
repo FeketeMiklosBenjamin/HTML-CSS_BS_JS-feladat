@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(87, 159, 201);
+}
+h1 {
+    background-color: rgb(25, 124, 253);
+    text-align: center
+}
+.kep {
+    height: 150px;
+    float: left;
+}
+.kep_felszin {
+    float: left;
+    height: 200px;
+}
